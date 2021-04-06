@@ -13,7 +13,7 @@
         // definizione di un oggetto -->
         var parameters={
           APPID: "754f8369e6d2cb35905087e26e4d064a",
-          q:$("#Città").val(),
+          q:$("#Citta").val(),
           units:$("#misura").val(),
 		  lang: "it"
         };
@@ -32,7 +32,7 @@
       //funzione eseguita automaticamente in caso di errore
         //errorThrow è il messaggio di errore del sistem: es. Not Found -->
         console.log("ERRORE: " + errorThrow);
-        $("#Città").val(errorThrow);
+        $("#Citta").val(errorThrow);
         $("#misura").val(errorThrow);
         $("#output").val(errorThrow);
 
@@ -45,10 +45,10 @@
         //se trova "data"
         if (data) {
           // assegna i valori del documento json ai campi del file html -->
-          $("#Città").val(data.city.name);
+          $("#Citta").val(data.city.name);
           //$("#misura").val();
           var altri="";
-          var Generalita="";
+          var generalitaa="";
 			var data_giorno=data.list[0].dt_txt;
 			var output=[];
 			var datav=[];
@@ -59,7 +59,7 @@
 			
 			datav[0]=data_giorno;
 
-          Generalita+="Città:    "+data.city.name+"\n"+"Nazione:    "+data.city.country+"\n"+
+          generalitaa+="Città:    "+data.city.name+"\n"+"Nazione:    "+data.city.country+"\n"+
           "Latitudine:    "+data.city.coord.lat+"°"+"\n"+"Longitudine:    "+data.city.coord.lon+"°"+"\n";
 			
 			if($("#misura").val()==="metric"){
@@ -96,7 +96,7 @@
 					}
 				}
           
-		  $("#generalità").val(Generalita);
+		  $("#generalita").val(generalitaa);
           $("#d1").val(datav[0]);
 			$("#d2").val(datav[1]);
 			$("#d3").val(datav[2]);

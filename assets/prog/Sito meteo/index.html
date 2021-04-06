@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>App Meteo</title>
+	<link rel="stylesheet" href="css/stile.css" type="text/css">
+	<script type="text/javascript" src="js/indexcode.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<div class="titolo">WEATHER TIME</div>
+	<h2>Previsioni meteo</h2>
+	<div>
+	<table class="tabella">
+			<tr>
+				<td class="testo">Città</td>
+				<td><input id="Città" type="text"></td>
+			</tr>
+			<tr>
+				<td class="testo">Unità</td>
+				<td>
+					<select name="siti" id="misura">
+						<option value="metric" selected="selected">Metric</option>
+						<option value="imperial">Imperial</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="testo">Generalità</td>
+				<td><textarea readonly rows="5" cols="30" id="generalità"></textarea></td>
+			</tr>
+		</table>
+	</div>	
+		
+		
+		<div class="spazio">
+			<table class="tabella2">
+				<tr>
+					<td><input id="d1" type="text" class="form-control bot"></td>
+					<td><input id="d2" type="text" class="form-control bot"></td>
+					<td><input id="d3" type="text" class="form-control bot"></td>
+					<td><input id="d4" type="text" class="form-control bot"></td>
+					<td><input id="d5" type="text" class="form-control bot"></td>
+				</tr>
+				<tr>
+					<td><textarea readonly rows="35" cols="35" id="o1"></textarea></td>
+					<td><textarea readonly rows="35" cols="35" id="o2"></textarea></td>
+					<td><textarea readonly rows="35" cols="35" id="o3"></textarea></td>
+					<td><textarea readonly rows="35" cols="35" id="o4"></textarea></td>
+					<td><textarea readonly rows="35" cols="35" id="o5"></textarea></td>
+				</tr>
+		</table>
+		</div>
+		
+		
+	<div><input id="submit" class="bottone" type="button"  value="Continua" onclick="jsonCall()"></div>
+</body>
+</html>

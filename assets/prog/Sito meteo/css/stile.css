@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+}
+
+.titolo{
+	text-align: center;
+	font-size: bold;
+	font-size: 70px;
+}
+.tabella{
+	width: 30%;
+	padding: 5px;
+	text-align: center;
+}
+
+.tabella2{
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+
+.bottone
+{
+	width:35%;
+	padding:5px;
+	
+}
+.testo
+{
+	font-size: 25px;
+}
+.spazio{
+	margin: 20px;
+}
+
+body
+{
+	background-color: #f2f2f2;
+}
+
+div{
+text-align: center;
+}
+
+textarea{
+	text-align: center;
+}
+
+#submit {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font: bold 12px Arial, Helvetica, sans-serif;
+ color: #fff;
+ padding: 10px 20px;
+ border: solid 1px #0076a3;
+ background: #3981B5;
+}
+
+h2{
+	text-align: center;
+}
